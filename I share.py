@@ -6,7 +6,7 @@ import aiogram
 
 #################TOKEN######################
 logging.basicConfig(level=logging.INFO)
-TOKEN = '5784301297:AAFjUKkl_sRPuNWWrwrS0FIm4U5WduOmS3U'
+TOKEN = 'YOU BOT TOKEN'
 ############################################
 
 bot = Bot(token=TOKEN)
@@ -23,7 +23,7 @@ for i in l:
 
 @dp.message_handler(commands=["start"])
 async def cmd_start(message: types.Message):
-    await bot.send_sticker(message.chat.id, "CAACAgIAAxkBAAEHslVj6JnhzW68_HJ4G-g9JB-lDe8qjQAC_Q8AAoqi0EmT6eEEbPSFWC4E")
+    await bot.send_sticker(message.chat.id, "YOU CHAT API")
 
     keyboard = types.InlineKeyboardMarkup()
     keyboard.add(types.InlineKeyboardButton(text="Купить подписку", callback_data="random_value1"))
